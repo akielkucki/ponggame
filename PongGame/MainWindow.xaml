@@ -1,0 +1,17 @@
+﻿<Window x:Class="PongGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Pong" Width="610" Height="400">
+    <Grid>
+        <Canvas x:Name="canvas" Background="Black" Width="600" Height="380">
+            <TextBlock Name="scoreLabel"></TextBlock>
+            <Rectangle Fill="White" Width="1" Height="50000" Canvas.Left="300" Canvas.Top="0"></Rectangle>
+            <Rectangle x:Name="paddle1" Fill="White" Width="10" Height="100" Canvas.Left="10" Canvas.Top="150" />
+            <Rectangle x:Name="paddle2" Fill="White" Width="10" Height="100" Canvas.Left="580" Canvas.Top="150" />
+            
+            <Rectangle x:Name="ball" Fill="White" Width="15" Height="15" Canvas.Left="292.5" Canvas.Top="192.5" />
+            <Path x:Name="ballTrail" Stroke="White" StrokeThickness="1" />
+
+        </Canvas>
+    </Grid>
+</Window>
